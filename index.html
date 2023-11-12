@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>FREEDOM</title>
+    <script>
+        $(document).ready(function () {
+            $('#toggle').click(function () {
+                $('.header_nav ul').slideToggle();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="fruild-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="logo">
+                        Freedom
+                    </div>
+                </div>
+                <div id="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="col-10">
+
+                    <div class="header_nav">
+
+                        <ul>
+                            <li><a href="#home">TRANG CHỦ</a></li>
+                            <div class="input-group" style="width: 555px" onkeyup="searchfunc()">
+                                <div class="form-outline" style="display: flex; justify-content: center;" >
+                                    <input type="search" id="inp-search" class="form-control" placeholder="Bạn muốn tìm gì?"
+                                        style="border-radius: 1px;" >
+                                    <button type="button" class="btn btn-primary " id="search" >
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                            <li>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        style="width: 45px;" fill="currentColor" class="bi bi-basket"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><a href="signup.html" style="margin-right: 10px;margin-left: 15px">ĐĂNG KÝ</a></li>
+                            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <div class="fruild-container">
+            <img src="./image/logo/slider_1.jpg" alt="" style="width: 100%;" id="home">
+            <div class="container">
+                <div class="slickpoli">
+                    <div class=" item">
+                        <div class="media">
+                            <img class="lazyload" src="./image/logo/Freeship.png" alt="Freeship">
+                        </div>
+                        <div class="info">
+                            <span>Freeship</span>
+                            <p>Miễn phí vận chuyển</p>
+                        </div>
+                    </div>
+                    <div class=" item">
+                        <div class="media">
+                            <img class="lazyload" src="./image/logo/Hoàn_trả.png" alt="Hoàn trả">
+                        </div>
+                        <div class="info">
+                            <span>Hoàn trả</span>
+                            <p>Trong 3 ngày miễn phí</p>
+                        </div>
+                    </div>
+                    <div class=" item">
+                        <div class="media">
+                            <img class="lazyload" src="./image/logo/Visa.png" alt="Thanh toán">
+                        </div>
+                        <div class="info">
+                            <span>Thanh toán</span>
+                            <p>Hỗ trợ nhiều hình thức</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="titlemodule">
+                    <h2>
+                        <a href="#" title="Sản phẩm hot">Sản phẩm hot</a>
+                    </h2>
+                    <img src="./image/logo/logo_lá.png" alt="" class="sub_logo">
+                </div>
+                <div class="clearfix slick">
+                    <div class="slick_4 clearfix">
+                        <div class="item_2">
+                            <div class="item_product_main">
+                                <div class="product-loop-1 product-base">
+                                    <div class="product-thumbnail">
+                                        <a class="image_link" href="#" title="Nho Mỹ">
+                                            <img class="lazyload" src="./image/Nho_Mỹ.png" alt="Nho Mỹ">
+                                            <div class="btn-btn">
+                                                <button class="add-cart">Mua ngay</button>
+                                                <button class="btn-buy" title="Đặt hàng ngay">
+                                                    <a href="/infor.html/infor1.html">Mua ngay</a>
+                                                </button>
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                    <div class="product-info ">
+                                        <h3 class="product-name">
+                                            <a class="quick-view" href="#">Nho Mỹ</a>
+                                        </h3>
+                                        <span class="price product-price">300.000₫/kg</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_2">
+                            <div class="item_product_main">
+                                <div class="product-loop-1 product-base">
+                                    <div class="product-thumbnail">
+                                        <a class="image_link" href="#" title="Sầu riêng">
+                                            <img class="lazyload" src="./image/Sầu_riêng.png" alt="Sầu riêng">
+                                            <button class="btn-buy" title="Đặt hàng ngay" id="showButton1">
+                                                <a href="./infor.html/infor2.html">Mua ngay</a>
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div class="product-info ">
+                                        <h3 class="product-name">
+                                            <a class="quick-view" href="#">Sầu riêng</a>
+                                        </h3>
+                                        <span class="price product-price">85.000₫/kg</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_2">
+                            <div class="item_product_main">
+                                <div class="product-loop-1 product-base">
+                                    <div class="product-thumbnail">
+                                        <a class="image_link" href="#" title="Dâu tây">
+                                            <img class="lazyload" src="./image/Dâu_tây.jpg" alt="Dâu tây">
+                                            <button class="btn-buy" title="Đặt hàng ngay" style="margin-top: 36px;">
+                                                <a href="./infor.html/infor3.html">Mua ngay</a>
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div class="product-info ">
+                                        <h3 class="product-name">
+                                            <a class="quick-view" href="#">Dâu tây</a>
+                                        </h3>
+                                        <span class="price product-price">120.000₫/kg</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_2">
+                            <div class="item_product_main">
+                                <div class="product-loop-1 product-base">
+                                    <div class="product-thumbnail">
+                                        <a class="image_link" href="#" title="Chery Mỹ">
+                                            <img class="lazyload" src="./image/Chery_Mỹ.png" alt="Chery Mỹ">
+                                            <button class="btn-buy" title="Đặt hàng ngay" style="margin-top: 14px;">
+                                                <a href="./infor.html/infor4.html">Mua ngay</a>
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div class="product-info ">
+                                        <h3 class="product-name">
+                                            <a class="quick-view" href="#">Chery Mỹ</a>
+                                        </h3>
+                                        <span class="price product-price">600.000₫/kg</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row Banner">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="Banner_1">
+                            <a class="scale_hover" href="#" title="Banner 1">
+                                <img src="./image/logo/2banner_1.jpg" alt="Banner 1" style="margin-left: 30px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="Banner_2">
+                            <a class="scale_hover" href="#" title="Banner 2">
+                                <img src="./image/logo/2banner_2.jpg" alt="Banner 2" style="float: right;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="awe-section-main">
+                <section class="section_all_pro clearfix">
+                    <div class="container">
+                        <div class="title_section">
+                            <h2>
+                                <span>Danh sách sản phẩm</span>
+                            </h2>
+                            <img src="./image/logo/logo_lá.png" alt="" class="sub_logo">
+                        </div>
+                        <div class="tab-block-more">
+                            
+                            <div class="section uwrap_tab">
+                                <div class="tab-content tab-1">
+                                    <div class="content_module">
+                                        <div class="wrap_content contentfill">
+                                            <div class="row row-lazyload">
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Nho_Mỹ.png" alt=""
+                                                                        style="height: 130px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button class="add-cart">Mua ngay</button>
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor1.html">Xem
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Nho Mỹ</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">300.000₫/kg</span>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Sầu_riêng.png" alt=""
+                                                                        style="height: 130px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor2.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Sầu riêng</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">85.000₫/kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Dâu_tây.jpg" alt=""
+                                                                        style="height: 130px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor3.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Dâu tây</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">120.000₫/kg</span>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Chery_Mỹ.png" alt=""
+                                                                        style="height: 130px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor4.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Chery Mỹ</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">600.000₫/kg</span>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/cam.png" alt="">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="" method="post"
+                                                                        class="variants form-nut-grid"></form>
+                                                                    <div class="group_action">
+                                                                        <button
+                                                                            class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                            title="Đặt hàng ngay" style="margin: 17px;">
+                                                                            <a href="./infor.html/infor5.html">Mua
+                                                                                ngay</a>
+                                                                        </button>
+                                                                    </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title="">Quả cam</a></h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">70.000₫/kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title=" "
+                                                                    style="display: flex; justify-content: center;">
+                                                                    <img src="./image/Chanh_vàng.png" alt="Chanh vàng"
+                                                                        style="width: 70%;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="/cart/add" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay"
+                                                                                style="margin: 17px;">
+                                                                                <a href="./infor.html/infor6.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title=" ">Chanh vàng</a></h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">100.000₫/kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Dưa_hấu.jpg" alt="Dưa hấu">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="/cart/add" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay"
+                                                                                style="margin: 30px;">
+                                                                                <a href="./infor.html/infor7.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title="">Dưa hấu</a></h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">15.000₫/kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title=" ">
+                                                                    <img src="./image/kiwi.png" alt="Kiwi"
+                                                                        style="margin-top: 19px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action=" " method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor8.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title=" ">Kiwi</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">170.000₫/kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title=" ">
+                                                                    <img src="./image/Lựu.jpg" alt="">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay"
+                                                                                style="margin-top: 15px;">
+                                                                                <a href="./infor.html/infor9.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title=" ">Quả lựu</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">50.000₫/kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/đu_đủ.jpg" alt="">
+                                                                </a>
+
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay"
+                                                                                style="margin-top: 15px;">
+                                                                                <a href="./infor.html/infor10.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#" title="">Đu
+                                                                        đủ</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">15.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Táo.jpg" alt=""
+                                                                        style="width: 70%; margin-left: 18px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor11.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="#">Táo</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">25.000₫/kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Xoài.jpg" alt="">
+                                                                </a>
+
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay"
+                                                                                style="margin-top: 25px;">
+                                                                                <a href="./infor.html/infor12.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Xoài</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">40.000₫/kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Ổi.jpg" alt="">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor13.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Ổi</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">15.000₫/kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Thịt_lợn_xay.jpeg" alt=""
+                                                                        style="width: 70%;margin-left: 20px;">
+
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor14.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Thịt lợn xay</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">45.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Chân_giò.jpg" alt=""
+                                                                        style="width: 70%;margin-left: 20px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor15.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Chân giò</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">42.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Chân_gà.jpg" alt=""
+                                                                        style="margin-top: 20px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor16.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Chân gà</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">32.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Thịt_bò.jpeg" alt=""
+                                                                        style="width: 72%;margin-left: 20px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor17.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Thịt bò</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">50.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Ajinomoto.png" alt="">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor18.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Bột ngọt Ajinomoto</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">34.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Muối_i_ốt.png" alt=""
+                                                                        style="width: 70%;margin-left: 20px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor19.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Muối I ốt</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">7.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Muối_tôm.png" alt=""
+                                                                        style="width: 70%;margin-left: 20px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor20.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Muối tôm Như Ý</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">50.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Nam_ngư_nước_mắm.png" alt=""
+                                                                        style="width: 50%;margin-left: 40px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor21.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Nước mắm Nam Ngư</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">38.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Nước_mắm_knorr.png" alt=""
+                                                                        style="width: 70%;margin-left: 20px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor22.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Nước mắm Knorr</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">50.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Nước_mắm_cá_cơm.png" alt=""
+                                                                        style="width: 56%;margin-left: 20px;">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="#" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor23.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name">
+                                                                    <a class="xem_nhanh quick-view" href="#"
+                                                                        title="">Nước mắm cá cơm</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">75.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Nước_ép_cam.jpg" alt="Nước ép cam"
+                                                                        style="width: 65%;margin-left: 22px">
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="/cart/add" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor24.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title="">Nước ép cam</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">30.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/nước_ép_chanh_dây.jpg" alt=""
+                                                                        style="width: 75%;margin-left: 16px;">
+
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="/cart/add" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor25.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title="">Nước ép chanh dây</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">20.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/nước_ép_cà_rốt.jpg" alt=""
+                                                                        style="width: 70%;margin-left: 20px;">
+
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="/cart/add" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor26.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title="">Nước ép cà rốt</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">20.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/nước_ép_dâu.jpg" alt=""
+                                                                        style="margin-top: 20px;">
+
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="/cart/add" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay"
+                                                                                style="margin-top: 16px;">
+                                                                                <a href="./infor.html/infor27.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title="">Nước ép dâu</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">25.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Nước_ép_dưa_hấu.jpg" alt=""
+                                                                        style="margin-top: 10px;">
+
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="/cart/add" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor28.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title="">Nước ép dưa hấu</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">20.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/nước_ép_dứa.jpg" alt="">
+
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="/cart/add" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor29.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title="">Nước ép dứa</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">20.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-fix-5 col-lg-fix-5 col-6 col-sm-4 col-md-3">
+                                                    <div class="item_product_main">
+                                                        <div class="product-loop-1 product-loop-2 product-base">
+                                                            <div class="product-thumbnail">
+                                                                <a class="image_link image_thumb display_flex scale_hover xem_nhanh quick-view"
+                                                                    href="#" title="">
+                                                                    <img src="./image/Nước_ép_đào.jpg" alt=""
+                                                                        style="width: 70%;margin-left: 20px;">
+
+                                                                </a>
+                                                                <div class="product-action clearfix">
+                                                                    <form action="/cart/add" method="post"
+                                                                        class="variants form-nut-grid">
+                                                                        <div class="group_action">
+                                                                            <button
+                                                                                class="btn-buy btn-cart btn btn-circle left-to add_to_cart "
+                                                                                title="Đặt hàng ngay">
+                                                                                <a href="./infor.html/infor30.html">Mua
+                                                                                    ngay</a>
+                                                                            </button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info a-center">
+                                                                <h3 class="product-name"><a class="xem_nhanh quick-view"
+                                                                        href="#" title="">Nước ép đào</a>
+                                                                </h3>
+                                                                <div class="product-hideoff">
+                                                                    <div class="product-hide">
+                                                                        <div class="price-box clearfix">
+                                                                            <div class="special-price">
+                                                                                <span
+                                                                                    class="price product-price">25.000₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                </section>
+            </section>
+
+        </div>
+
+    </div>
+    <div id="footer">
+        <div class="footer_info">
+            <div class="footer_width about col-md-4">
+                <h2>Về chúng tôi</h2>
+                <p>
+                    Chúng tôi tự hào giới thiệu đến bạn dịch vụ cung cấp hoa quả tươi ngon nhất từ vườn trái cây của
+                    chúng tôi trực tiếp đến tận cửa nhà bạn. Tại FREEDOM, chúng tôi cam kết mang đến
+                    những loại hoa quả tươi sạch và ngon nhất, chất lượng luôn là ưu tiên hàng đầu của chúng tôi.
+                </p>
+
+            </div>
+            <div class="footer_width link col-md-4">
+                <div class="social-media">
+
+                    <h2>Mạng xã hội</h2>
+                    <ul class="flex-column">
+                        <div class="d-flex" style="margin-bottom: 10px;color: #00845C;">
+                            <i class="fa-brands fa-facebook" style="padding-top:5px"></i>
+                            <a style="margin-left: 5px;"
+                                href="https://www.facebook.com/profile.php?id=100030239790002&mibextid=LQQJ4d">Facebook</a>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-brands fa-instagram" style="padding-top:5px;color: #00845C;"></i>
+                            <a style="margin-left: 5px "
+                                href="https://instagram.com/anh.khanh.2210?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_width contact col-md-4">
+                <h2>Liên lạc</h2>
+                <ul>
+                    <li>
+                        <span><i class="fa fa-map-marker-alt" style="color: #00845C;"></i></span>
+                        <a href="#">
+                            Địa chỉ: Số 123, Sông Nhuệ,phường Đức Thắng,quận Bắc Từ Liêm, Hà Nội
+                        </a>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-envelope" style="color: #00845C;"></i></span>
+                        <a href="#">Email: kdao2003@gmail.com</a>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" style="color: #00845C;"></i></span>
+                        <a href="#">Điện thoại: 0356286535</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right">
+            @ Sản phẩm xuất bản năm 2023 - Đào Anh Khánh
+        </div>
+    </div>
+</body>
+<script src="./script/script0/listimg.js"></script>
+<script src="./script/script0/buyAmount.js"></script>
+<script src="./script/script0/show_hide.js"></script>
+
+<script src="./script/script1/listimg.js"></script>
+<script src="./script/script1/buyAmount.js"></script>
+<script src="./script/script1/show_hide.js"></script>
+
+<script src="./script/search.js"></script>
+
+</html>
